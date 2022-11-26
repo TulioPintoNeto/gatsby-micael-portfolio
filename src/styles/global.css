@@ -1,0 +1,28 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    border: 0;
+    font: inherit;
+    vertical-align: baseline;
+
+    color: var(--primary-color);
+}
+
+body {
+    background: var(--background);
+    font-family: var(--secondary-font);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--primary-font);
+}
+
+ul {
+    list-style-type: none;
+}
