@@ -3,6 +3,7 @@
     --secondary-color: #222324;
     --background: #222324;
 
-    --primary-font: "Montserrat";
+    --primary-font: "Montserrat", sans-serif;
     --secondary-font: "Helvetica";
+    --default-spacement: 120px;
 }

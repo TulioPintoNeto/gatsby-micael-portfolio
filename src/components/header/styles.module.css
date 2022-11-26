@@ -2,6 +2,7 @@
     display: flex;
     justify-content: space-between;
     padding: 36px 0;
+    margin-bottom: var(--default-spacement);
 }
 
 .header h1 {
@@ -21,7 +22,7 @@
     margin-left: 48px;
 }
 
-.header ul li.roundedButton {
+.header ul li.rounded-button {
     border: 1px solid var(--primary-color);
     padding: 8px 32px;
     border-radius: 100px;

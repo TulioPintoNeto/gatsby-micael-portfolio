@@ -1,0 +1,30 @@
+.description-section {
+    background: url("/static/media/lines-description-background.png");
+    padding-top: 20px;
+}
+
+.description-section__row {
+    align-items: center;
+    display: flex;
+    margin: 0 -30px;
+}
+
+.description-section__row > div {
+    width: 50%;
+    padding: 0 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.description-section p {
+    margin: 20px 0;
+    font-size: 40px;
+    line-height: 46px;
+}
+
+.description-section span,
+.description-section b {
+    color: var(--secondary-color);
+    background: var(--primary-color);
+}
