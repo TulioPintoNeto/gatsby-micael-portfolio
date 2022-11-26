@@ -1,8 +1,7 @@
 import React from "react";
-import { mediaFolder } from "../../core/variables";
-import Image from "./../image";
+import Image from "../../image";
 import * as styles from "./styles.module.css";
-import { container } from "../../ui/container.module.css";
+import { container } from "../../../ui/container.module.css";
 
 export default function Description() {
     return (
@@ -24,7 +23,7 @@ export default function Description() {
                 </div>
                 <div>
                     <Image
-                        src={`${mediaFolder}/micael-ilieff.png`}
+                        src="/micael-ilieff.png"
                         alt="Protography of Micael Ilieff"
                     />
                 </div>
