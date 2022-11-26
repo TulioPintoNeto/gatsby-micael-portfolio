@@ -1,0 +1,28 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 36px 0;
+}
+
+.header h1 {
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 39px;
+}
+
+.header ul {
+    display: flex;
+    align-items: center;
+}
+
+.header ul li {
+    font-size: 24px;
+    line-height: 28px;
+    margin-left: 48px;
+}
+
+.header ul li.roundedButton {
+    border: 1px solid var(--primary-color);
+    padding: 8px 32px;
+    border-radius: 100px;
+}

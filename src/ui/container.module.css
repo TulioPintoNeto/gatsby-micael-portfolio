@@ -1,0 +1,37 @@
+@value devices: "../styles/devices.css";
+@value small, medium, large, extra-large, large from devices;
+
+.container {
+    margin: 0 auto;
+    width: 100%;
+}
+
+@media (min-width: small) {
+    .container {
+        width: 540px;
+    }
+}
+
+@media (min-width: medium) {
+    .container {
+        width: 720px;
+    }
+}
+
+@media (min-width: large) {
+    .container {
+        width: 960px;
+    }
+}
+
+@media (min-width: extra-large) {
+    .container {
+        width: 1140px;
+    }
+}
+
+@media (min-width: large) {
+    .container {
+        width: 1320px;
+    }
+}
