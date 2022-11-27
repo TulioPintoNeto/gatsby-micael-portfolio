@@ -1,11 +1,10 @@
 import React from "react";
 import Image from "../../image";
 import * as styles from "./styles.module.css";
-import { container } from "../../../ui/container.module.css";
 
 export default function Description() {
     return (
-        <section className={`${container} ${styles.descriptionSection}`}>
+        <section className={styles.descriptionSection}>
             <div className={styles.descriptionSection__row}>
                 <div>
                     <p>

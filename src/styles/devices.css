@@ -1,5 +1,5 @@
-@value small: 576px;
-@value medium: 768px;
-@value large: 992px;
-@value extra-large: 1200px;
-@value large: 1400px;
+@value sm: 576px;
+@value md: 768px;
+@value lg: 992px;
+@value xl: 1200px;
+@value xxl: 1400px;

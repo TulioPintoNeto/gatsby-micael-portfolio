@@ -1,36 +1,36 @@
 @value devices: "../styles/devices.css";
-@value small, medium, large, extra-large, large from devices;
+@value sm, md, lg, xl, xxl from devices;
 
 .container {
     margin: 0 auto;
-    width: 100%;
+    width: calc(100% - 32px);
 }
 
-@media (min-width: small) {
+@media (min-width: sm) {
     .container {
         width: 540px;
     }
 }
 
-@media (min-width: medium) {
+@media (min-width: md) {
     .container {
         width: 720px;
     }
 }
 
-@media (min-width: large) {
+@media (min-width: lg) {
     .container {
         width: 960px;
     }
 }
 
-@media (min-width: extra-large) {
+@media (min-width: xl) {
     .container {
         width: 1140px;
     }
 }
 
-@media (min-width: large) {
+@media (min-width: lg) {
     .container {
         width: 1320px;
     }

@@ -1,3 +1,6 @@
+@value devices: './devices.css';
+@value md from devices;
+
 :root {
     --primary-color: #f4f4f4;
     --secondary-color: #222324;
@@ -5,5 +8,11 @@
 
     --primary-font: "Montserrat", sans-serif;
     --secondary-font: "Helvetica";
-    --default-spacement: 120px;
+    --default-spacement: 48px;
+}
+
+@media (min-width: md) {
+    :root {
+        --default-spacement: 120px;
+    }
 }
