@@ -30,7 +30,7 @@
     }
 }
 
-@media (min-width: lg) {
+@media (min-width: xxl) {
     .container {
         width: 1320px;
     }
