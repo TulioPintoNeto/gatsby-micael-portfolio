@@ -23,7 +23,7 @@ export default function Description() {
                 <div>
                     <Image
                         src="/micael-ilieff.png"
-                        alt="Protography of Micael Ilieff"
+                        alt="Photograph of Micael Ilieff"
                     />
                 </div>
             </div>
