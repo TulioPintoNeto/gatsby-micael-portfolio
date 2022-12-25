@@ -1,4 +1,4 @@
-@value devices: '../../../styles/devices.css';
+@value devices: '../../styles/devices.css';
 @value md, xl from devices;
 
 .portfolio__header {

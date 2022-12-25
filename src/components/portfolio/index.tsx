@@ -1,7 +1,7 @@
 import React from "react";
 import * as styles from "./styles.module.css";
 
-import { whiteDot } from "../../../ui/white-dot.module.css";
+import { whiteDot } from "../../ui/white-dot.module.css";
 
 export default function Portfolio() {
     return (

@@ -1,4 +1,4 @@
-@value devices: '../../../styles/devices.css';
+@value devices: '../../styles/devices.css';
 @value sm, md from devices;
 
 @value backgroundTopSpacement: 30px;
