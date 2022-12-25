@@ -1,9 +1,20 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "gatsby";
 import * as styles from "./styles.module.css";
 import { container } from "../../ui/container.module.css";
+import { Button, Drawer } from "@mui/material";
+import Images from "../../core/constants/images";
+import Menu from "../menu";
 
 export default function Header() {
+    const [isDrawerOpen, setIsDrawerOpen] = useState(false);
+
+    const toggleDrawer = (value: boolean) => {
+        return () => {
+            setIsDrawerOpen(value);
+        };
+    };
+
     return (
         <div className={container}>
             <header className={styles.header}>
@@ -12,14 +23,23 @@ export default function Header() {
                 </Link>
 
                 <nav>
-                    <ul>
-                        <li>
-                            <Link to="about-me">about me</Link>
-                        </li>
-                        <li className={styles.roundedButton}>
-                            <Link to="lets-talk">let's talk</Link>
-                        </li>
-                    </ul>
+                    <Button
+                        className={styles.drawerButton}
+                        onClick={toggleDrawer(true)}
+                    >
+                        <img src={Images.menu} />
+                    </Button>
+                    <div className={styles.desktopMenu}>
+                        <Menu />
+                    </div>
+                    <Drawer
+                        anchor="right"
+                        className={styles.drawer}
+                        onClose={toggleDrawer(false)}
+                        open={isDrawerOpen}
+                    >
+                        <Menu vertical />
+                    </Drawer>
                 </nav>
             </header>
         </div>

@@ -1,3 +1,6 @@
+@value devices: '../../styles/devices.css';
+@value md from devices;
+
 .header {
     display: flex;
     justify-content: space-between;
@@ -7,23 +10,34 @@
 
 .header h1 {
     font-weight: 500;
-    font-size: 32px;
-    line-height: 39px;
-}
-
-.header ul {
-    display: flex;
-    align-items: center;
-}
-
-.header ul li {
     font-size: 24px;
-    line-height: 28px;
-    margin-left: 48px;
+    line-height: 29px;
 }
 
-.header ul li.rounded-button {
-    border: 1px solid var(--primary-color);
-    padding: 8px 32px;
-    border-radius: 100px;
+@media (min-width: md) {
+    .header h1 {
+        font-size: 32px;
+        line-height: 39px;
+    }
+}
+
+.desktop-menu {
+    display: none;
+}
+
+@media (min-width: md) {
+    .desktop-menu {
+        display: block;
+    }
+}
+
+@media (min-width: md) {
+    .header .drawer-button {
+        display: none;
+        margin-right: -8px;
+    }
+}
+
+.drawer :global .MuiDrawer-paper {
+    background: var(--secondary-color);
 }

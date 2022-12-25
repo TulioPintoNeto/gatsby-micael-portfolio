@@ -1,0 +1,33 @@
+@value devices: '../../styles/devices.css';
+@value md from devices;
+
+.menu {
+    display: flex;
+    align-items: center;
+}
+
+.menu-vertical {
+    flex-direction: column;
+    justify-content: center;
+    margin: 12px;
+}
+
+.menu li {
+    font-size: 18px;
+    margin: 8px 24px;
+}
+
+@media (min-width: md) {
+    .menu li {
+        font-size: 24px;
+        margin-left: 48px;
+    }
+}
+
+@media (min-width: md) {
+    .menu li.rounded-button {
+        border: 1px solid var(--primary-color);
+        padding: 8px 32px;
+        border-radius: 100px;
+    }
+}
