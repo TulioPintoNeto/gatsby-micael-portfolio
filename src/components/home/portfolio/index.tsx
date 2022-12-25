@@ -5,8 +5,8 @@ import { whiteDot } from "../../../ui/white-dot.module.css";
 
 export default function Portfolio() {
     return (
-        <section>
-            <div className={styles.portfolioHeader}>
+        <section className={styles.portfolio}>
+            <div className={styles.portfolio__header}>
                 <div>
                     <h3>
                         <p>lastest</p>
@@ -26,6 +26,7 @@ export default function Portfolio() {
                     </p>
                 </div>
             </div>
+            <img src="./photo-teste.jpg" />
         </section>
     );
 }

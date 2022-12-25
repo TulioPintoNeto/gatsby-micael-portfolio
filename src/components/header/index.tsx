@@ -27,7 +27,10 @@ export default function Header() {
                         className={styles.drawerButton}
                         onClick={toggleDrawer(true)}
                     >
-                        <img src={Images.menu} />
+                        <img
+                            src={Images.menu}
+                            alt="Ícone hamburguer para abrir o menu"
+                        />
                     </Button>
                     <div className={styles.desktopMenu}>
                         <Menu />
