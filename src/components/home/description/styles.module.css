@@ -1,26 +1,75 @@
+@value devices: '../../../styles/devices.css';
+@value sm, md from devices;
+
+@value backgroundTopSpacement: 30px;
+
 .description-section {
     background: url("/lines-description-background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
     padding-top: 20px;
 }
 
 .description-section__row {
-    align-items: center;
     display: flex;
-    margin: 0 -30px;
+    flex-direction: column-reverse;
+    margin: 0 -backgroundTopSpacement;
+}
+
+@media (min-width: md) {
+    .description-section__row {
+        align-items: center;
+        flex-direction: row;
+    }
 }
 
 .description-section__row > div {
-    width: 50%;
-    padding: 0 30px;
+    align-items: flex-start;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    padding: 0 30px;
+    position: relative;
+    width: calc(100% - 60px);
+}
+
+@media (min-width: md) {
+    .description-section__row > div {
+        width: calc(50% - 60px);
+    }
+}
+
+.description-section p:first-child {
+    position: absolute;
+    top: -100px;
+    width: calc(100% - 60px);
+    z-index: 1000;
+}
+
+@media (min-width: sm) {
+    .description-section p:first-child {
+        top: -70px;
+    }
+}
+
+@media (min-width: md) {
+    .description-section p:first-child {
+        position: static;
+        width: 100%;
+    }
 }
 
 .description-section p {
-    margin: 20px 0;
-    font-size: 40px;
-    line-height: 46px;
+    margin: -1px 0;
+    font-size: 22px;
+    line-height: 25px;
+}
+
+@media (min-width: md) {
+    .description-section p {
+        font-size: 40px;
+        line-height: 46px;
+        margin: 20px 0;
+    }
 }
 
 .description-section span,
