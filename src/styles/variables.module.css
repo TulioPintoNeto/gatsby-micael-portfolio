@@ -7,7 +7,7 @@
     --background: #222324;
 
     --primary-font: "Montserrat", sans-serif;
-    --secondary-font: "Helvetica";
+    --secondary-font: Helvetica, Arial, sans-serif;
     --default-spacement: 48px;
 }
 

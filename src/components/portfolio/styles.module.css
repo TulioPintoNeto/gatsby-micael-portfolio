@@ -1,70 +1,73 @@
 @value devices: '../../styles/devices.css';
 @value md, xl from devices;
 
-.portfolio__header {
+.portfolio header {
     display: flex;
     justify-content: space-between;
     flex-direction: column;
+    margin-bottom: 64px;
 }
 
 @media (min-width: md) {
-    .portfolio__header {
+    .portfolio header {
         flex-direction: row;
     }
 }
 
-.portfolio__header h3,
-.portfolio__header > div {
+.portfolio header h3,
+.portfolio header > div {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
-.portfolio__header > div:first-child {
+.portfolio header > div:first-child {
     flex-direction: row;
     align-items: center;
 }
 
-.portfolio__header h3 > p {
+.portfolio header h3 > p {
     font-weight: 300;
     font-size: 32px;
     line-height: 37px;
 }
 
 @media (min-width: xl) {
-    .portfolio__header h3 > p {
+    .portfolio header h3 > p {
         font-size: 90px;
         line-height: 103px;
     }
 }
 
-.portfolio__header h3 > p:last-child {
+.portfolio header h3 > p:last-child {
     padding-left: 86px;
 }
 
 @media (min-width: xl) {
-    .portfolio__header h3 > p:last-child {
+    .portfolio header h3 > p:last-child {
         padding-left: 236px;
     }
 }
 
-.portfolio__header > div {
+.portfolio header > div {
     align-items: flex-end;
 }
 
-.portfolio__header > div > p {
+.portfolio__paragraph {
     font-weight: 300;
     font-size: 14px;
     line-height: 16px;
+}
+
+.portfolio header .portfolio__paragraph {
     margin-top: 28px;
     text-align: right;
 }
 
 @media (min-width: xl) {
-    .portfolio__header > div:last-child p {
+    .portfolio__paragraph {
         font-size: 20px;
         line-height: 23px;
-        margin-top: 0;
     }
 }
 
@@ -80,11 +83,41 @@
 
 @media (min-width: md) {
     .medium-or-higher-devices {
-        display: inline;
+        display: block;
     }
 }
 
 .portfolio img {
-    margin: 64px 0 32px;
+    margin: 0 0 32px;
     width: 100%;
+}
+
+.portfolio h4 {
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 32px;
+    margin-bottom: 16px;
+}
+
+.portfolio h4 + .portfolio__paragraph {
+    color: #b1b1b1;
+}
+
+.portfolio .portfolio__row {
+    display: flex;
+    align-items: start;
+    margin: -16px;
+}
+
+.portfolio .portfolio__row section {
+    width: 50%;
+    margin: 0 16px;
+}
+
+.portfolio .portfolio__row section:nth-child(2) {
+    margin-top: 44px;
+}
+
+.portfolio .portfolio__row section:nth-child(2) img {
+    margin-top: 16px;
 }
