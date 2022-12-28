@@ -74,18 +74,6 @@
     }
 }
 
-.portfolio img {
-    margin: 0 0 32px;
-    width: 100%;
-}
-
-.portfolio h4 {
-    font-weight: 400;
-    font-size: 28px;
-    line-height: 32px;
-    margin-bottom: 16px;
-}
-
 .portfolio .portfolio__row {
     display: flex;
     flex-wrap: wrap;

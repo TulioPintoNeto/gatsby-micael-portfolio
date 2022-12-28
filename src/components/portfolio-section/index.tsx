@@ -1,5 +1,6 @@
 import React from "react";
 import PortfolioParagraph from "./../portfolio-paragraph/index";
+import * as styles from "./styles.module.css";
 
 interface Props {
     imgSrc: string;
@@ -15,8 +16,10 @@ const PortfolioSection = ({
     paragraphClassName,
 }: Props) => {
     return (
-        <section>
-            <img src={imgSrc} />
+        <section className={styles.portfolioSection}>
+            <div className={styles.portfolioSection__imgWrapper}>
+                <img src={imgSrc} />
+            </div>
             <h4>{title}</h4>
             <PortfolioParagraph className={paragraphClassName}>
                 {text}
