@@ -1,0 +1,32 @@
+@value devices: '../styles/devices.css';
+
+.uncolor-dot {
+    border-radius: 10px;
+    height: 10px;
+    width: 10px;
+}
+
+.uncolor-dot-md {
+    height: 20px;
+    width: 20px;
+}
+
+.white-dot {
+    background-color: var(--primary-color);
+}
+
+.black-dot {
+    background-color: var(--secondary-color);
+}
+
+.white-dot,
+.black-dot {
+    composes: uncolor-dot;
+}
+
+@media (min-width: md) {
+    .white-dot,
+    .black-dot {
+        composes: uncolor-dot-md;
+    }
+}

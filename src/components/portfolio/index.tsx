@@ -1,6 +1,6 @@
 import React from "react";
 import * as styles from "./styles.module.css";
-import { whiteDot } from "../../ui/white-dot.module.css";
+import { whiteDot } from "../../ui/dot.module.css";
 import PortfolioParagraph from "./../portfolio-paragraph/index";
 import PortfolioSection from "./../portfolio-section/index";
 
