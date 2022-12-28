@@ -1,0 +1,15 @@
+@value devices: '../../styles/devices.css';
+@value md, xl from devices;
+
+.portfolio-paragraph {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+@media (min-width: xl) {
+    .portfolio-paragraph {
+        font-size: 20px;
+        line-height: 23px;
+    }
+}

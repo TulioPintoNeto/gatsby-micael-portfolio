@@ -1,9 +1,14 @@
 import React from "react";
 import * as styles from "./styles.module.css";
-
 import { whiteDot } from "../../ui/white-dot.module.css";
+import PortfolioParagraph from "./../portfolio-paragraph/index";
+import PortfolioSection from "./../portfolio-section/index";
 
 export default function Portfolio() {
+    const smallerDevicesWhiteDot = () => {
+        return <div className={`${whiteDot} ${styles.smallerDevicesOnly}`} />;
+    };
+
     return (
         <section className={styles.portfolio}>
             <header>
@@ -12,49 +17,44 @@ export default function Portfolio() {
                         <p>lastest</p>
                         <p>work</p>
                     </h3>
-                    <div
-                        className={`${whiteDot} ${styles.smallerDevicesOnly}`}
-                    />
+                    {smallerDevicesWhiteDot()}
                 </div>
                 <div>
                     <div
                         className={`${whiteDot} ${styles.mediumOrHigherDevices}`}
                     />
-                    <p className={styles.portfolio__paragraph}>
+                    <PortfolioParagraph className={styles.headerParagraph}>
                         take a look in my most recent work, feel free <br /> to
                         share any thoughts and ask anything.
-                    </p>
+                    </PortfolioParagraph>
                 </div>
             </header>
-            <section>
-                <img src="./photo-teste.jpg" />
-                <h4>Lounge</h4>
-                <p className={styles.portfolio__paragraph}>
-                    A solution for companies that seek to adapt their routines
-                    to the digital world.
-                </p>
-            </section>
+            <PortfolioSection
+                imgSrc="./photo-teste.jpg"
+                paragraphClassName={styles.portfolioSection__paragraph}
+                title="Lounge"
+                text="A solution for companies that seek to adapt their routines to the digital world."
+            />
             <div className={styles.portfolio__row}>
-                <section>
-                    <img src="./photo-teste.jpg" />
-                    <h4>Startup Emotus</h4>
-                    <p className={styles.portfolio__paragraph}>
-                        Plataform developed to better organize budgets and
-                        inventory related to solar energy industry.
-                    </p>
-                </section>
-                <section>
+                <PortfolioSection
+                    imgSrc="./photo-teste.jpg"
+                    paragraphClassName={styles.portfolioSection__paragraph}
+                    title="Startup Emotus"
+                    text="Plataform developed to better organize budgets and inventory related to solar energy industry."
+                />
+                <div>
                     <div
                         className={`${whiteDot} ${styles.mediumOrHigherDevices}`}
                     />
-                    <img src="./photo-teste.jpg" />
-                    <h4>Cobalto</h4>
-                    <p className={styles.portfolio__paragraph}>
-                        A solution for companies that seek to adapt their
-                        routines to the digital world.
-                    </p>
-                </section>
+                    <PortfolioSection
+                        imgSrc="./photo-teste.jpg"
+                        paragraphClassName={styles.portfolioSection__paragraph}
+                        title="Cobalto"
+                        text="Educacional plataform for university students to monitor their activities and performance,"
+                    />
+                </div>
             </div>
+            {smallerDevicesWhiteDot()}
         </section>
     );
 }
