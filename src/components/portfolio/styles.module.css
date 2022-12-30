@@ -65,12 +65,22 @@
     display: flex;
     flex-wrap: wrap;
     align-items: start;
-    margin: -16px;
+    margin: 0 -16px;
 }
 
 @media (min-width: md) {
     .portfolio .portfolio__row {
         flex-wrap: nowrap;
+    }
+}
+
+.margin-bottom-small-devices {
+    margin-bottom: 44px;
+}
+
+@media (min-width: md) {
+    .margin-bottom-small-devices {
+        margin-bottom: 0;
     }
 }
 

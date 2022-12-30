@@ -43,7 +43,7 @@ export default function Portfolio() {
                     title="Startup Emotus"
                     text="Plataform developed to better organize budgets and inventory related to solar energy industry."
                 />
-                <div>
+                <div className={styles.marginBottomSmallDevices}>
                     <div
                         className={`${whiteDot} ${styles.mediumOrHigherDevices}`}
                     />

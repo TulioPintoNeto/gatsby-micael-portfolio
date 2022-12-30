@@ -14,10 +14,10 @@ const Menu = ({ vertical = false }: Props) => {
     return (
         <ul className={`${styles.menu} ${mapsStyleFromProps()}`}>
             <li>
-                <Link to="about-me">about me</Link>
+                <Link to="/about-me">about me</Link>
             </li>
             <li className={styles.roundedButton}>
-                <Link to="lets-talk">let's talk</Link>
+                <Link to="/lets-talk">let's talk</Link>
             </li>
         </ul>
     );
