@@ -6,9 +6,7 @@ import AboutMeContent from "../components/about-me-content";
 const AboutMe = () => {
     return (
         <Page>
-            <main className={container}>
-                <AboutMeContent />
-            </main>
+            <AboutMeContent />
         </Page>
     );
 };
