@@ -10,11 +10,11 @@ interface Props {
 
 const Page = ({ children }: Props) => {
     return (
-        <main className={container}>
+        <>
             <Header />
-            {children}
+            <main className={container}>{children}</main>
             <Footer />
-        </main>
+        </>
     );
 };
 export default Page;
