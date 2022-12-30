@@ -1,13 +1,4 @@
-@value devices: '../../styles/devices.css';
-@value md from devices;
-
-.about-me > div:first-child {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 44px;
-}
-
-.about-me p {
+.about-me__paragraph {
     margin-left: auto;
     margin-bottom: 1em;
     max-width: 794px;
@@ -16,7 +7,7 @@
     line-height: 23px;
 }
 
-.about-me p > span {
+.about-me__paragraph > span {
     background: #d9d9d9;
     color: var(--secondary-color);
 }
