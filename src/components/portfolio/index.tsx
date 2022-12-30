@@ -1,8 +1,9 @@
 import React from "react";
 import * as styles from "./styles.module.css";
 import { whiteDot } from "../../ui/dot.module.css";
-import PortfolioParagraph from "./../portfolio-paragraph/index";
-import PortfolioSection from "./../portfolio-section/index";
+import PortfolioParagraph from "./../portfolio-paragraph";
+import PortfolioSection from "./../portfolio-section";
+import Title from "../title";
 
 export default function Portfolio() {
     const smallerDevicesWhiteDot = () => {
@@ -13,10 +14,10 @@ export default function Portfolio() {
         <section className={styles.portfolio}>
             <header>
                 <div>
-                    <h3>
+                    <Title className={styles.portfolio__title}>
                         <p>lastest</p>
                         <p>work</p>
-                    </h3>
+                    </Title>
                     {smallerDevicesWhiteDot()}
                 </div>
                 <div>

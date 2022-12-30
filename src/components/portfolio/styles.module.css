@@ -14,7 +14,7 @@
     }
 }
 
-.portfolio header h3,
+.portfolio__title,
 .portfolio header > div {
     display: flex;
     flex-direction: column;
@@ -26,25 +26,12 @@
     align-items: center;
 }
 
-.portfolio header h3 > p {
-    font-weight: 300;
-    font-size: 32px;
-    line-height: 37px;
-}
-
-@media (min-width: xl) {
-    .portfolio header h3 > p {
-        font-size: 90px;
-        line-height: 103px;
-    }
-}
-
-.portfolio header h3 > p:last-child {
+.portfolio__title > p:last-child {
     padding-left: 86px;
 }
 
 @media (min-width: xl) {
-    .portfolio header h3 > p:last-child {
+    .portfolio__title > p:last-child {
         padding-left: 236px;
     }
 }

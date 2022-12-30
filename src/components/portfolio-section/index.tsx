@@ -1,5 +1,5 @@
 import React from "react";
-import PortfolioParagraph from "./../portfolio-paragraph/index";
+import PortfolioParagraph from "./../portfolio-paragraph";
 import * as styles from "./styles.module.css";
 
 interface Props {

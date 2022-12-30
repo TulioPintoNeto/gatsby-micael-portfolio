@@ -1,0 +1,15 @@
+@value devices: '../../styles/devices.css';
+@value xl from devices;
+
+.title {
+    font-weight: 300;
+    font-size: 32px;
+    line-height: 37px;
+}
+
+@media (min-width: xl) {
+    .title {
+        font-size: 90px;
+        line-height: 103px;
+    }
+}

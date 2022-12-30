@@ -1,20 +1,19 @@
 import * as React from "react";
-import Header from "../components/header";
 import Description from "../components/description";
 import Portfolio from "../components/portfolio";
-import Footer from "../components/footer";
 import { container } from "../ui/container.module.css";
 import "../styles";
+import Page from "../components/page";
 
-export default function Home() {
+const Home = () => {
     return (
-        <>
-            <Header />
+        <Page>
             <main className={container}>
                 <Description />
                 <Portfolio />
             </main>
-            <Footer />
-        </>
+        </Page>
     );
-}
+};
+
+export default Home;

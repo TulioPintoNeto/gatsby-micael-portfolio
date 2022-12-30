@@ -1,5 +1,5 @@
 abstract class Images {
-    static menu = "./menu.svg";
+    static menu = "/menu.svg";
 }
 
 export default Images;
