@@ -13,11 +13,34 @@ const Menu = ({ vertical = false }: Props) => {
 
     return (
         <ul className={`${styles.menu} ${mapsStyleFromProps()}`}>
+            {vertical && (
+                <li>
+                    <Link
+                        activeClassName={styles.menuActiveLink}
+                        className={styles.menuLink}
+                        to="/"
+                    >
+                        home
+                    </Link>
+                </li>
+            )}
             <li>
-                <Link to="/about-me">about me</Link>
+                <Link
+                    activeClassName={styles.menuActiveLink}
+                    className={styles.menuLink}
+                    to="/about-me"
+                >
+                    about me
+                </Link>
             </li>
             <li className={styles.roundedButton}>
-                <Link to="/lets-talk">let's talk</Link>
+                <Link
+                    activeClassName={styles.menuActiveLink}
+                    className={styles.menuLink}
+                    to="/lets-talk"
+                >
+                    let's talk
+                </Link>
             </li>
         </ul>
     );

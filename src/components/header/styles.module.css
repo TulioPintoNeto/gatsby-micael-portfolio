@@ -39,5 +39,21 @@
 }
 
 .drawer :global .MuiDrawer-paper {
-    background: var(--secondary-color);
+    background: var(--background);
+    box-sizing: border-box;
+    padding: 24px 16px;
+    width: 100vw;
+}
+
+.drawer__row {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 96px;
+}
+
+.drawer__title {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
 }

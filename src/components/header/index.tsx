@@ -41,6 +41,17 @@ export default function Header() {
                         onClose={toggleDrawer(false)}
                         open={isDrawerOpen}
                     >
+                        <div className={styles.drawer__row}>
+                            <h2 className={styles.drawer__title}>
+                                micael i. porto
+                            </h2>
+                            <Button onClick={toggleDrawer(false)}>
+                                <img
+                                    src={Images.close}
+                                    alt="Ícone para fechar o menu"
+                                />
+                            </Button>
+                        </div>
                         <Menu vertical />
                     </Drawer>
                 </nav>
